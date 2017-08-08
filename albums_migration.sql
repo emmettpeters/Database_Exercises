@@ -8,7 +8,7 @@
  	artist VARCHAR(40) DEFAULT "NONE",
  	name VARCHAR(100) DEFAULT "NONE",
  	release_date YEAR(4),
- 	sales FLOAT(10,2),
+ 	sales FLOAT(13,2),
  	genre VARCHAR(40),
  	PRIMARY KEY (id)
  );
