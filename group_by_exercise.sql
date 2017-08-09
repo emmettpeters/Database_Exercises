@@ -1,5 +1,6 @@
 use codeup_test_db;
 
-select *
+select distinct *
 from titles
-group by title;
+group by title
+order by title;
