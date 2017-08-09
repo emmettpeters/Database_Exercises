@@ -9,5 +9,5 @@ select *
 from employees
 where last_name like "e%"
 	and last_name like "%e"
-	group by last_name
-	order by last_name; 
+	group by last_name,first_name;
+	/* order by last_name;  */
