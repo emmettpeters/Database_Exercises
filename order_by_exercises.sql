@@ -38,11 +38,12 @@ where (hire_date like "199%"
 
 /* select * from employees where last_name like "%q%"; */
 
-select distinct first_name, last_name
+select *, count(*)
 from employees
 where last_name like "%q%"
 	and last_name not like "%qu%"
-	group by first_name,last_name;
+	group by first_name,last_name
+	order by first_name;
 	
 	/* select count(*) as "number of employees by gender",gender
 	from employees

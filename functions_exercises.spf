@@ -118,11 +118,11 @@ where (hire_date like "199%"
 
 /* select * from employees where last_name like "%q%"; */
 
-select distinct first_name, last_name
+select *, count(distinct first_name, last_name)
 from employees
 where last_name like "%q%"
 	and last_name not like "%qu%"
-	group by first_name,last_name;
+	/* group by first_name,last_name; */
 	
 	/* select count(*) as "number of employees by gender",gender
 	from employees
@@ -147,6 +147,30 @@ where last_name like "%q%"
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>/* select * from employees where last_name like "%q%"; */
+
+select count(distinct first_name, last_name)
+from employees
+where last_name like "%q%"
+	and last_name not like "%qu%"
+	/* group by first_name,last_name; */
+	
+	/* select count(*) as "number of employees by gender",gender
+	from employees
+	group by gender;
+	 */</string>
+		<string>/* select * from employees where last_name like "%q%"; */
+
+select distinct first_name, last_name
+from employees
+where last_name like "%q%"
+	and last_name not like "%qu%"
+	/* group by first_name,last_name; */
+	
+	/* select count(*) as "number of employees by gender",gender
+	from employees
+	group by gender;
+	 */</string>
 		<string>/* select * from employees where last_name like "%q%"; */
 
 select distinct first_name, last_name
@@ -319,18 +343,6 @@ where last_name like "e%"
 	and last_name like "%e"
 	group by last_name
 	order by last_name desc</string>
-		<string>select *
-from employees
-where last_name like "e%"
-	and last_name like "%e"
-	group by last_name
-	order by lst_name desc</string>
-		<string>select *
-from employees
-where last_name like "e%"
-	and last_name like "%e"
-	group by last_name
-	order by emp_no desc</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
