@@ -10,4 +10,4 @@ from employees
 where last_name like "e%"
 	and last_name like "%e"
 	group by last_name
-	order by emp_no desc; 
+	order by last_name; 
