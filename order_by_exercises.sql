@@ -2,21 +2,22 @@ USE employees;
 
 /* select * from employees where first_name in ("irena","vidya","maya"); */
 
-select count(*),gender 
+select count(*), gender 
 from employees
 where (first_name = "irena"
 	or first_name = "vidya"
 	or first_name = "maya")
+	group by gender
 	order by last_name,first_name;
 	
 
 /* select * from employees where last_name like "E%"; */
 
-/* select *
+select concat(first_name," ",last_name)
 from employees
 where last_name like "e%"
 	or last_name like "%e"
-	order by emp_no desc; */
+	order by emp_no desc;
 	
 /* select *
 from employees
@@ -44,7 +45,7 @@ where last_name like "%q%"
 	
 	/* select count(*) as "number of employees by gender",gender
 	from employees
-	group by gender; */
-	
+	group by gender;
+	 */
 	
 	
