@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>employees</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>7952221726012922481</string>
+			<key>name</key>
+			<string>Vagrant Codeup MySQL</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>vagrant</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkdJCouMjU4PFUkbnVs
+			bNMJCgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+A
+			AoADgASjERITgAWABoAIgA5UdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			GxygoIAH0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0
+			YWJsZURpY3Rpb25hcnmjICIjXE5TRGljdGlvbmFyeVhOU09iamVj
+			dNIKCyUpoyYnKIAJgAuADIAN0gsrLC1ZTlMuc3RyaW5ngApWZW1w
+			X25v0h4fLzBfEA9OU011dGFibGVTdHJpbmejLzEjWE5TU3RyaW5n
+			0gsrLDSAClV0aXRsZdILKyw3gApZZnJvbV9kYXRl0h4fOTpeTlNN
+			dXRhYmxlQXJyYXmjOTsjV05TQXJyYXnSHh8iPaIiI18QD05TS2V5
+			ZWRBcmNoaXZlctFAQVRkYXRhgAEACAARABoAIwAtADIANwBJAE8A
+			VgBeAGkAcAB0AHYAeAB6AH4AgACCAIQAhgCLAJAAlQC+AMUAxgDH
+			AMkAzgDZAOIA+AD8AQkBEgEXARsBHQEfASEBIwEoATIBNAE7AUAB
+			UgFWAV8BZAFmAWwBcQFzAX0BggGRAZUBnQGiAaUBtwG6Ab8AAAAA
+			AAACAQAAAAAAAABCAAAAAAAAAAAAAAAAAAABwQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 450}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>use codeup_test_db;
+
+
+</string>
+			<key>table</key>
+			<string>titles</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select *
+from employees
+where last_name like "%q%"
+	and last_name not like "%qu%"
+	group by last_name</string>
+		<string>select *
+from employees
+where last_name like "e%"
+	and last_name like "%e"
+	group by last_name,first_name</string>
+		<string>select *
+from employees
+where last_name like "e%"
+	and last_name like "%e"
+	group by last_name
+	order by last_name</string>
+		<string>select *
+from employees
+where last_name like "e%"
+	and last_name like "%e"
+	group by last_name
+	order by last_name desc</string>
+		<string>select *
+from employees
+where last_name like "e%"
+	and last_name like "%e"
+	group by last_name
+	order by lst_name desc</string>
+		<string>select *
+from employees
+where last_name like "e%"
+	and last_name like "%e"
+	group by last_name
+	order by emp_no desc</string>
+		<string>select distinct *
+from titles
+group by title
+order by title</string>
+		<string>select distinct *
+from titles
+group by title
+order by emp_no</string>
+		<string>select distinct *
+from titles
+group by title</string>
+		<string>from titles
+group by title</string>
+		<string>select distinct
+from titles
+group by title</string>
+		<string>select *
+from titles
+group by title</string>
+		<string>select *
+from titles</string>
+		<string>/* select * from employees where first_name in ("irena","vidya","maya"); */
+
+select * from employees where last_name like "E%"</string>
+		<string>/* select * from employees where first_name in ("irena","vidya","maya"); */
+
+select * from employees where last_name[0] = E</string>
+		<string>[0] = "E"</string>
+		<string>/* select * from employees where first_name in ("irena","vidya","maya"); */
+
+select * from employees where last_name[0] = "E"</string>
+		<string>select * from employees where first_name in ("irena","vidya","maya")</string>
+		<string>SELECT * FROM departments</string>
+		<string>SELECT * FROM DEPARTMENTS</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.55-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
