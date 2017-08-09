@@ -149,6 +149,26 @@ where last_name like "%q%"
 	<array>
 		<string>/* select * from employees where last_name like "%q%"; */
 
+select *, count(*)
+from employees
+where last_name like "%q%"
+	and last_name not like "%qu%"
+	group by first_name,last_name
+	order by first_name</string>
+		<string>/* select * from employees where last_name like "%q%"; */
+
+select *, count(distinct first_name, last_name)
+from employees
+where last_name like "%q%"
+	and last_name not like "%qu%"
+	/* group by first_name,last_name; */
+	
+	/* select count(*) as "number of employees by gender",gender
+	from employees
+	group by gender;
+	 */</string>
+		<string>/* select * from employees where last_name like "%q%"; */
+
 select count(distinct first_name, last_name)
 from employees
 where last_name like "%q%"
@@ -331,18 +351,6 @@ from employees
 where last_name like "e%"
 	and last_name like "%e"
 	group by last_name,first_name</string>
-		<string>select *
-from employees
-where last_name like "e%"
-	and last_name like "%e"
-	group by last_name
-	order by last_name</string>
-		<string>select *
-from employees
-where last_name like "e%"
-	and last_name like "%e"
-	group by last_name
-	order by last_name desc</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
