@@ -43,6 +43,22 @@ join dept_emp on dept_emp.emp_no = employees.emp_no
 join departments d on d.dept_no = dept_emp.dept_no
 group by dept_name;
 
+select avg(salary), dept_name
+from salaries
+join employees e on e.emp_no = salaries.emp_no
+join dept_emp on dept_emp.emp_no = e.emp_no
+join departments dp on dp.dept_no = dept_emp.dept_no
+group by dept_emp.dept_no;
+
+-- what was the average salary in the 80s? By department?
+
+select avg(salary), dept_name
+from salaries
+join employees e on e.emp_no = salaries.emp_no
+join dept_emp on dept_emp.emp_no = e.emp_no
+join departments dp on dp.dept_no = dept_emp.dept_no
+where salaries.to_date < "1990-01-01"
+group by dept_emp.dept_no;
 
 
 
