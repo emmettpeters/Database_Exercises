@@ -32,4 +32,17 @@ group by birth_date
 order by count(birth_date) desc
 limit 1;
 
+select avg(salary)
+from salaries
+join dept_emp on dept_emp.emp_no = salaries.emp_no
+group by dept_no;
+
+select count(*) , dept_name
+from employees
+join dept_emp on dept_emp.emp_no = employees.emp_no
+join departments d on d.dept_no = dept_emp.dept_no
+group by dept_name;
+
+
+
 
